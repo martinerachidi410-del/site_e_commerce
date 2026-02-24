@@ -571,17 +571,14 @@ main .recent-orders a {
         width: 100%;
     }
     main .recent-orders table {
-        width: 100M;
+        width: 100%;
         margin: 0;
     }
     .right{
         width: 94%;
         margin: 0 auto 4rem;
     }
-    .right{
-        width: 94%;
-        margin: 0 auto 4rem;
-    }
+    
     .right .top {
         position: fixed;
         top: 0;

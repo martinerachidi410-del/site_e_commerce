@@ -1,7 +1,7 @@
 const sideMenu = document.querySelector("aside");
 const menuBtn = document.querySelector("#menu-btn");
 const closeBtn = document.querySelector("#close-btn"); 
-const themToggler = document.querySelector(".themeToggler");
+const themeToggler = document.querySelector(".theme-toggler");
 
 //show sidebar
 menuBtn.addEventListener('click', () => {
@@ -10,15 +10,15 @@ menuBtn.addEventListener('click', () => {
 
 //close sidebar
 closeBtn.addEventListener('click', () => {
-    sideMenu.style.accentColor.display = 'none';
+sideMenu.style.display = 'none';
 })
 
 //change theme
-themToggler.addEventListener('click', () => {
+themeToggler.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme-variables');
 
-    themToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-    themToggler.querySelector('span:nth-child(2)').classList.toggle('active');
+    themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
+    themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
     
 
 })
@@ -34,5 +34,5 @@ Orders.forEach(order => {
         <td class="primary">Details</td>
     `;
     tr.innerHTML = trContent;
-    document.querySelector('table tbody').aprendChild(tr);
+    document.querySelector('table tbody').appendChild(tr);
 })
