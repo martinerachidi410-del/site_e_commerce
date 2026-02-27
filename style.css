@@ -271,12 +271,22 @@ main .insights svg {
     width: 7rem;
     height: 7rem;
 }
-main .insights svg circle{
+
+/* main .insights svg circle{
     fill: none;
     stroke: var(--color-primary);
     stroke-width: 14;
     stroke-linecap: round;
     transform: translate(5px 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+} */
+main .insights svg circle {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
     stroke-dasharray: 110;
     stroke-dashoffset: 92;
 }
@@ -482,6 +492,11 @@ main .recent-orders a {
     aside .logo h3 {
         display: none;
     }
+
+    /* Sidebar : cacher les sous-titres h3 */ 
+    aside .sidebar h3 { display: none;
+     }
+     
     aside .sidebar a {
         width: 5.6rem;
     }
